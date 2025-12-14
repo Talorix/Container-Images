@@ -1,3 +1,4 @@
 {
-  "papermc": "https://raw.githubusercontent.com/talorix/Container-Images/refs/heads/main/PaperMC.json"
+  "papermc": "https://raw.githubusercontent.com/talorix/Container-Images/refs/heads/main/PaperMC.json",
+  "node20": "https://raw.githubusercontent.com/Talorix/Container-Images/refs/heads/main/NodeJS_20.json"
 }
