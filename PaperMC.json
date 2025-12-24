@@ -3,9 +3,9 @@
   "name": "PaperMC",
   "description": "PaperMC improves Minecraft's ecosystem with fast, secure software and an expanding plugin API, providing quick releases and helpful support as the most widely used, performant, and stable software available.",
   "envs": {
-    "EULA": "true",
     "VERSION": "1.21.10"
   },
+  "features": ["EULA"],
   "files": [
     {
       "filename": "paper.jar",
