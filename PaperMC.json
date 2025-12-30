@@ -6,6 +6,7 @@
     "VERSION": "1.21.10"
   },
   "features": ["EULA"],
+  "stopCmd": "stop",
   "files": [
     {
       "filename": "paper.jar",
