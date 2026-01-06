@@ -17,5 +17,5 @@
       "url": "https://raw.githubusercontent.com/Talorix/Container-Images/refs/heads/main/Node/20/package.json"
     }
   ],
-  "startCmd": "node {{entrypoint}}"
+  "startCmd": "node {{MainFile}}"
 }
