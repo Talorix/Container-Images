@@ -6,6 +6,7 @@
     "VERSION": "1.21.10"
   },
   "features": ["EULA"],
+  "startCmd": "java -Xms${MEMORY} -Xmx${MEMORY} -jar paper.jar nogui",
   "stopCmd": "stop",
   "files": [
     {
