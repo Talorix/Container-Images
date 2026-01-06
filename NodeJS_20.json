@@ -2,7 +2,9 @@
   "dockerImage": "ghcr.io/hydrenfoss/talorix:node20",
   "name": "NodeJS 20",
   "description": "Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.",
-  "envs": {},
+  "envs": {
+    "MainFile": "index.js"
+  },
   "stopCmd": "^C",
   "features": [],
   "files": [
@@ -14,5 +16,6 @@
       "filename": "package.json",
       "url": "https://raw.githubusercontent.com/Talorix/Container-Images/refs/heads/main/Node/20/package.json"
     }
-  ]
+  ],
+  "startCmd": "node {{entrypoint}}"
 }
