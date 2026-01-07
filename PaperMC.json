@@ -1,5 +1,12 @@
 {
-  "dockerImage": "ghcr.io/hydrenfoss/talorix:papermc",
+  "dockerImages": [
+    "ghcr.io/hydrenfoss/talorix:java17", 
+    "ghcr.io/hydrenfoss/talorix:java18", 
+    "ghcr.io/hydrenfoss/talorix:java19", 
+    "ghcr.io/hydrenfoss/talorix:java20", 
+    "ghcr.io/hydrenfoss/talorix:java21" 
+  ],
+  "dockerImage": "ghcr.io/hydrenfoss/talorix:java21",
   "name": "PaperMC",
   "description": "PaperMC improves Minecraft's ecosystem with fast, secure software and an expanding plugin API, providing quick releases and helpful support as the most widely used, performant, and stable software available.",
   "envs": {
