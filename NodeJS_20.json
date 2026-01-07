@@ -3,7 +3,8 @@
   "name": "NodeJS 20",
   "description": "Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.",
   "envs": {
-    "MainFile": "index.js"
+    "MainFile": "index.js",
+    "packages": ""
   },
   "stopCmd": "^C",
   "features": [],
@@ -17,5 +18,5 @@
       "url": "https://raw.githubusercontent.com/Talorix/Container-Images/refs/heads/main/Node/20/package.json"
     }
   ],
-  "startCmd": "node {{MainFile}}"
+  "startCmd": "npm i && node {{MainFile}}"
 }
