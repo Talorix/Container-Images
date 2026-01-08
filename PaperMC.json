@@ -12,7 +12,7 @@
   "envs": {
     "VERSION": "1.21.10"
   },
-  "features": ["EULA"],
+  "features": ["EULA", "PLUGINS", "PLAYERS"],
   "startCmd": "java -Xms${MEMORY} -Xmx${MEMORY} -jar paper.jar nogui",
   "stopCmd": "stop",
   "files": [
