@@ -16,7 +16,7 @@
   "features": ["EULA", "PLUGINS", "PLAYERS"],
   "startCmd": "java -Xms${MEMORY} -Xmx${MEMORY} -jar paper.jar nogui",
   "stopCmd": "stop",
-  "install_script": "curl -s https://mcjars.app/api/v1/builds/PAPER/{{VERSION}}/latest | jq -r '.build.installation[][] | select(.type == \"download\") | .url'c| xargs -I{} curl -L -o {{SERVERJAR}} {}",
+  "install_script": "apk add jq curl --no-interactive; curl -s https://mcjars.app/api/v1/builds/PAPER/{{VERSION}}/latest | jq -r '.build.installation[][] | select(.type == \"download\") | .url'c| xargs -I{} curl -L -o {{SERVERJAR}} {}",
   "files": [
     {
       "filename": "server.properties",
