@@ -10,16 +10,14 @@
   "name": "PaperMC",
   "description": "PaperMC improves Minecraft's ecosystem with fast, secure software and an expanding plugin API, providing quick releases and helpful support as the most widely used, performant, and stable software available.",
   "envs": {
-    "VERSION": "1.21.10"
+    "VERSION": "1.21.10",
+    "SERVERJAR": "paper.jar",
   },
   "features": ["EULA", "PLUGINS", "PLAYERS"],
   "startCmd": "java -Xms${MEMORY} -Xmx${MEMORY} -jar paper.jar nogui",
   "stopCmd": "stop",
+  "install_script": "curl -s https://mcjars.app/api/v1/builds/PAPER/{{VERSION}}/latest | jq -r '.build.installation[][] | select(.type == \"download\") | .url'c| xargs -I{} curl -L -o {{SERVERJAR}} {}",
   "files": [
-    {
-      "filename": "paper.jar",
-      "url": "https://raw.githubusercontent.com/Talorix/Container-Images/refs/heads/main/PaperMc/paper-{{VERSION}}.jar"
-    },
     {
       "filename": "server.properties",
       "url": "https://raw.githubusercontent.com/Talorix/Container-Images/refs/heads/main/server.properties"
